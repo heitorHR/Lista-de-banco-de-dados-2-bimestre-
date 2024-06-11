@@ -5,7 +5,7 @@ insert into Livros (titulo, autor,ano_publicação,cateoria, isbn, editora,pagin
 ('Osenhor dos aneis  ', 'Autor ficticio  ', 1997, true,'Fantasia  ','978-0618640157','HAroer colins ','500','Portugues  ');
 update Livros 
 set disponivel =false 
-where ano_publicação <200;
+where ano_publicaçao <200;
 update Livros 
 set editora = 'plume books '
 where titulo = ' 1984';
@@ -21,7 +21,7 @@ where isbn ='978-0439708180';
  where categoria = 'terror';
  
  delete from Livros 
- where idioma = 'frances' and data_publicação <=  1970;
+ where idioma = 'frances' and data_publicaçao <=  1970;
  
  delete from Livros
  where editora = 'Penguin Books';
